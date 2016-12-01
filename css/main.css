@@ -2,40 +2,93 @@ html {
   font-family: Verdana, sans-serif;
   background-image: url("../images/sloth-bg.svg");
   background-color: #bea586;
-  background-size: 48px;
+  background-repeat: repeat;
+  background-size: 48px auto;
 }
 
-h1 {
-  background: linear-gradient(to top, rgba(28, 14, 0, 0), rgba(28, 14, 0, .9));
-  color: #fff;
+.banner {
+  background-image: linear-gradient(to bottom, rgba(28, 14, 0, .8), rgba(28, 14, 0, .4), rgba(28, 14, 0, 0), rgba(28, 14, 0, 0), rgba(28, 14, 0, 0), rgba(28, 14, 0, 0), rgba(28, 14, 0, 0)), url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  padding-top: 66.8%;
+}
+
+.banner-content {
   font-family: Georgia, serif;
-  text-shadow: 2px 2px #000;
-  padding-top: .8rem;
-  padding-bottom: .8rem;
+  color: #fff;
+  left: 0;
+  top: .16em;
+}
+
+.banner-content-shadow {
+  font-family: Georgia, serif;
+  color: rgba(28, 14, 0, .8);
+  left: .1em;
+  top: .26em;
+}
+
+.img {
+  border-top: 2px solid #837c75;
+  border-bottom: 2px solid #837c75;
+}
+
+figure {
+  margin: 0;
 }
 
 figcaption {
   font-family: Georgia, serif;
-  padding-top: .3rem;
-  padding-bottom: .6rem;
+}
+
+main {
+  background-color: #fff;
+  max-width: 696px;
 }
 
 a {
   color: #000;
 }
 
-header,
-section,
-footer {
-  background-color: #fff;
+@media only screen and (min-width: 38em) {
+
+  .banner {
+    background-image: linear-gradient(to bottom, rgba(28, 14, 0, .7), rgba(28, 14, 0, .01), rgba(28, 14, 0, 0), rgba(28, 14, 0, 0), rgba(28, 14, 0, 0)), url("../images/banner.jpg");
+    padding-top: 66.6%;
+  }
+
+  .banner-content {
+    left: 0;
+    top: .08em;
+  }
+
+  .banner-content-shadow {
+    left: .07em;
+    top: .15em;
+  }
+
+  p {
+    padding-right: 1em;
+  }
+
 }
 
-footer {
-  padding-top: .7rem;
-  padding-bottom: .7rem;
+@media only screen and (min-width: 60em) {
+
+  main {
+    max-width: 690px;
+  }
+
 }
 
-.border {
-  border-bottom: solid 2px #766e66;
-  border-top: solid 2px #766e66;
+@media only screen and (min-width: 90em) {
+
+  .banner {
+    padding-top: 66.3%;
+  }
+
+  main {
+    max-width: 750px;
+  }
+
 }
