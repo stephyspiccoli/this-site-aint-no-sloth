@@ -1,0 +1,56 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: Verdana;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+h1 {
+  font-family: Georgia;
+  color: #fff;
+  background-image: linear-gradient(to top, rgba(28, 14, 0, 0), rgba(28, 14, 0, .6) 50%);
+  text-shadow: 2px 2px #000;
+}
+
+img {
+  width: 100%;
+}
+
+.border {
+  border-top: 3px solid #bea586;
+  border-bottom: 3px solid #bea586;
+}
+
+.title {
+  display: none;
+}
+
+figcaption {
+  font-family: Georgia;
+}
+
+.margin {
+  margin-top: 12em;
+}
+
+@media only screen and (min-width: 60em) {
+
+  body {
+    background-image: url("../images/logo.svg");
+    background-size: 48px;
+    color: #bea586;
+  }
+
+}
